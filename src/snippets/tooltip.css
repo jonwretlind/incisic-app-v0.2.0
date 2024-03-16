@@ -1,0 +1,19 @@
+.help {
+  border: 0.5px solid #aaa;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+}
+.help .link {
+    display: inline-block;
+    position: relative;
+    left: 4.25px;
+    text-decoration: none;
+    top: -1px;
+    color: #aaa;
+}
+.help:hover, .link:hover {
+  border-color: #555;
+  color: #555;
+}

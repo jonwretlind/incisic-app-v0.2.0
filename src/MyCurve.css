@@ -1,0 +1,28 @@
+#MyCurveDataEntry {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#MyCurve {}
+
+.mycurve-data td {
+  padding: 10px 10px 0px 10px;
+}
+
+.mycurve-data label,
+.mycurve-data input {
+  display: block;
+}
+
+.mycurve-data label {
+  font-size: .8rem;
+}
+
+.mycurve-data input {
+  border-radius: 0px;
+  border: 1px solid silver;
+  margin-top: .25em;
+}

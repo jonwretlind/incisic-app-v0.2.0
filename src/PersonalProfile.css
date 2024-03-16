@@ -1,0 +1,37 @@
+.heading.h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.detail {
+    display: grid;
+    grid-template-areas: "a b";
+    grid-column-gap: 1rem;
+}
+.col1 {
+  grid-area: a;
+  width: 150px;
+}
+.col2 {
+  grid-area: b;
+  width: 250px;
+}
+
+#Profile {
+  display: grid;
+  grid-template-areas:  "info pic"
+                        "info pic";
+}
+
+#Profile .profile-pic {
+  max-width: 250px;
+  width: 33vw;
+  grid-area: pic;
+  grid-row: 1 / span 3;
+}
+
+#Profile .heading,
+#Profile .detail {
+  grid-area: info;
+}

@@ -1,0 +1,101 @@
+#RORCalcWrapper {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 750px;
+}
+
+#RORCalcWrapper>button {
+  margin-left: 2em;
+}
+
+.columns label {
+  padding: 20px 0 0 0;
+  font-size: .8rem;
+}
+
+#CalcResults {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  width: 80%;
+}
+
+#CalcResultAVG {
+  padding-left: 10px;
+  font-weight: 500;
+  font-size: 1em;
+  color: #01579b;
+}
+
+#CalcResultACT {
+  padding-left: 10px;
+  font-weight: 500;
+  font-size: 2em;
+  color: #576C33;
+}
+
+#RORCalcWrapper .columns {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+#RORCalcWrapper .columns .col1 {
+  padding-right: 2em;
+}
+
+.col1>div,
+.col2>div {
+  padding: 10px 10px 0px 10px;
+}
+
+.columns input {
+  border-radius: 0px;
+  border: 1px solid silver;
+}
+
+.help {
+  border: 0.5px solid #aaa;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+}
+
+#CalcTable {
+  flex-direction: column;
+  margin: 0 0 40px 0;
+  max-height: 20vh;
+  overflow-y: scroll;
+  border: 1px solid #ddd;
+}
+
+#CalcTable .row {
+  display: grid;
+  grid-template-columns: repeat(6, 10vw);
+  padding: 5px;
+}
+
+#CalcTable .row div {
+  min-width: 50px;
+  font-size: 14px;
+}
+
+#CalcTable .annPay input {
+  max-width: 60px;
+  font-size: 14px;
+  border: 1px solid silver;
+}
+
+#Labels{
+  display: grid;
+  grid-template-columns: repeat(6, 10vw);
+  font-size: 12px;
+  font-weight: 700;
+  margin-top: 40px;
+  background-color: #576C32;
+  color: white;
+  padding: 5px;
+}

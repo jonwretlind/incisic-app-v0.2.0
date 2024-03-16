@@ -1,0 +1,16 @@
+{
+      "userdata": {
+        "firstname":      "Joe Bob",
+        "lastname":       "Briggs",
+        "email":          "joe@joeplumbing.com",
+        "age":            51,
+        "relationships":  "Married",
+        "spousename":     "Mary Sue",
+        "num_children":   3,
+        "child_1":        "Bobby",
+        "child_2":        "Buffy",
+        "child_3":        "Biff",
+        "employer":       "Joe's Plumbing",
+        "annual_income":  95000
+      }
+  }

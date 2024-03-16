@@ -1,6 +1,6 @@
 {
-  "name": "incisic-app-v0.2.0",
-  "version": "0.1.0",
+  "name": "incisic-app",
+  "version": "0.2.0",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
@@ -34,5 +34,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@mui/material": "^5.15.13"
   }
 }
