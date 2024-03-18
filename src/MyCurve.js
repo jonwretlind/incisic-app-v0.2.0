@@ -101,11 +101,11 @@ class MyCurve extends Component {
       .attr("width", WIDTH)
       .attr("height", HEIGHT);*/
 
-    var dataGroup = d3.nest()
+    var dataGroup = d3.group()
       .key(function (d) { return d.Phase })
       .entries(dataSet);
 
-    /*var dataGroup2 = d3.nest()
+    /*var dataGroup2 = d3.group()
       .key(function (d) { return d.Phase })
       .entries(dataSet);*/
 
@@ -127,7 +127,7 @@ class MyCurve extends Component {
         return d.principal;
       })]);
 
-
+ 
     var xAxis = d3.axisBottom(xScale),
         yAxis = d3.axisLeft(yScale);
 

@@ -30,6 +30,7 @@ connection.once("open", function () {
 
 app.addHook('preHandler', contentRangeHook);
 userRoutes(app, userData);
+schillerRoutes(app, schillerData);
 
 app.get('/', (req, res) => {
   res.send('Hello, this is the Incisic Backend Server at your service!');

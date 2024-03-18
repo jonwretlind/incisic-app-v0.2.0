@@ -1,8 +1,9 @@
 import logo from './img/cropped-RGB_Incisic_Final.png';
 import './App.css';
+import { hot } from 'react-hot-loader/root';
 import * as React from 'react';
-import HomeIcon from '@material-ui/icons/Home';
-import UserIcon from '@material-ui/icons/PersonOutline';
+import HomeIcon from '@mui/icons-material/esm/Home';
+import UserIcon from '@mui/icons-material/esm/PersonOutline';
 import AppWindow from './AppWindow';
 import { ThemeProvider } from '@mui/material/styles';
 import Theme from './helpers/theme';
@@ -28,4 +29,4 @@ function App() {
     </ThemeProvider>
   );
 }
-export default App;
+export default hot(App);

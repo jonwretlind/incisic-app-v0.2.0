@@ -6,7 +6,7 @@ module.exports = (app) => {
   app.post('/api/user', UserController.create);
 
   // get the list of users
-  app.get('/api/user', UserController.fetch);
+  app.get('/api/user/all', UserController.fetch);
 
   // get a single user
   app.get('/api/user/:id', UserController.get);

@@ -1,0 +1,22 @@
+[{
+  "_id": {
+    "$oid": "65f4877528ff1d43a838f10b"
+  },
+  "userdata": {
+    "firstname": "Joe Bob",
+    "lastname": "Briggs",
+    "email": "joe@joeplumbing.com",
+    "age": 51,
+    "relationships": "Married",
+    "spousename": "Mary Sue",
+    "dependents": 3,
+    "children": {
+      "child_1": "Bobby",
+      "child_2": "Buffy",
+      "child_3": "Biff"
+    },
+    "employer": "Joe's Plumbing",
+    "annual_income": 95000,
+    "picture": "joebob.png"
+  }
+}]

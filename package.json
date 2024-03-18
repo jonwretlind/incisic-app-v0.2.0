@@ -3,9 +3,11 @@
   "version": "0.2.0",
   "private": true,
   "dependencies": {
+    "@fontsource/roboto": "^5.0.12",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "html-webpack-plugin": "^5.6.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
@@ -15,7 +17,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "dev": "webpack-dev-server --hot"
   },
   "eslintConfig": {
     "extends": [
@@ -36,6 +39,21 @@
     ]
   },
   "devDependencies": {
-    "@mui/material": "^5.15.13"
+    "@babel/plugin-transform-react-jsx": "^7.23.4",
+    "@babel/preset-react": "^7.23.3",
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.15.13",
+    "@mui/material": "^5.15.13",
+    "css-loader": "^6.10.0",
+    "d3": "^7.9.0",
+    "file-loader": "^6.2.0",
+    "financejs": "^4.1.0",
+    "interpolate-html-plugin": "^4.0.0",
+    "preset-react": "^1.0.0",
+    "react-hot-loader": "^4.13.1",
+    "style-loader": "^3.3.4",
+    "ts-loader": "^9.5.1",
+    "webpack-cli": "^5.1.4"
   }
 }

@@ -31,15 +31,16 @@ class PersonalProfile extends Component {
       console.log(api + userId);
       return result.json();
     }).then(data => {
+      console.log(data.userdata);
       const traverse = new Traverse();
       let user = () => {
         return (
-          <span>{data.firstname} {data.lastname}</span>
+          <span>{data.userdata.firstname} {data.userdata.lastname}</span>
         )
       }
 
       let picture = () => {
-        var url = "/assets/" + data.picture;
+        var url = "/assets/" + data.userdata.picture;
         return (
           <img src={url} className="profile-pic" alt="User profile pic" />
         )
@@ -48,12 +49,12 @@ class PersonalProfile extends Component {
       this.setState({
         Name: user(),
         Picture: picture(),
-        Age: data.age,
-        Relationships: data.relationships,
-        Spouse: data.spousename,
-        Dependents: data.dependents,
-        Children: traverse.run(data.children),
-        Employer: data.employer
+        Age: data.userdata.age,
+        Relationships: data.userdata.relationships,
+        Spouse: data.userdata.spousename,
+        Dependents: data.userdata.dependents,
+        Children: traverse.run(data.userdata.children),
+        Employer: data.userdata.employer
       })
     }).catch((error) => {
       // Handle the error

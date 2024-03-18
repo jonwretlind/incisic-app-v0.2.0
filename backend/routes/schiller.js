@@ -3,17 +3,17 @@ const SchillerDataController = require('../controllers/schillerDataController');
 
 module.exports = (app) => {
     // create a record
-    app.post('/api/schiller', SchillerDataController.create);
+    app.post('/api/schiller_data', SchillerDataController.create);
 
     // get the list of records
-    app.get('/api/schiller', SchillerDataController.fetch);
+    app.get('/api/schiller_data/all', SchillerDataController.fetch);
 
     // get a single record
-    app.get('/api/schiller:id', SchillerDataController.get);
+    app.get('/api/schiller_data/:id', SchillerDataController.get);
 
     // update a record
-    app.put('/api/schiller:id', SchillerDataController.update);
+    app.put('/api/schiller_data/:id', SchillerDataController.update);
 
     // delete a record
-    app.delete('/api/schiller:id', SchillerDataController.delete);
+    app.delete('/api/schiller_data/:id', SchillerDataController.delete);
 };

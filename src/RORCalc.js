@@ -21,7 +21,7 @@ class RORCalc extends Component {
       percentStocks: 100,
       percentBonds: 0,
       percentTreas: 0,
-      api: "http://localhost:4000/all",
+      api: "http://localhost:4000/api/schiller_data/all",
       econData: null,
       items: null,
       histData: [],
@@ -63,9 +63,9 @@ class RORCalc extends Component {
       idx = 0;
 
     for (var j = yearIndex; j < (yearIndex + _this.def.numYears); j++) {
-      var rate = hData[j].SandP,
+      var rate = hData[j].SandP * 100,
         year = hData[j].Year,
-        intRate = +(hData[j].SandP).toFixed(2),
+        intRate = +(hData[j].SandP * 100).toFixed(2),
         fv = Math.round(finance.FV(rate, balBOY + annPay, 1)),
         mngFee = Math.round((_this.def.mngFee / 100) * (balBOY + annPay));
 
